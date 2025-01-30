@@ -2,14 +2,14 @@
 name = "erd_rs"
 version = "0.1.0"
 edition = "2021"
-description = "A CLI that take Rust code as the source of truth to produce a entity relation diagram markdown file (e.g., mermaid.js file)."
+description = "A command line utility that take Rust code as the source of truth to produce a entity relation diagram markdown file (e.g., mermaid.js file)."
 readme = "README.md"
 authors = ["Sengrith PROM <psengrith.dev@gmail.com>"]
 repository = "https://github.com/psengrith/erd_rs"
 homepage = "https://psr-portfolio.web.app"
 license = "GPL-3.0-or-later"
-categories = ["cli"]
-keywords = ["entity-relation", "diagram", "cli", "markdown", "mermaid.js"]
+categories = ["command-line-utilities"]
+keywords = ["entity-relation", "diagram", "markdown", "mermaid-js", "utilities"]
 
 
 [dependencies]
