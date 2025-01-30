@@ -1,0 +1,22 @@
+[package]
+name = "erd_rs"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI that take Rust code as the source of truth to produce a entity relation diagram markdown file (e.g., mermaid.js file)."
+readme = "README.md"
+authors = ["Sengrith PROM <psengrith.dev@gmail.com>"]
+repository = "https://github.com/psengrith/erd_rs"
+homepage = "https://psr-portfolio.web.app"
+license = "GPL-3.0-or-later"
+categories = ["cli"]
+keywords = ["entity-relation", "diagram", "cli", "markdown", "mermaid.js"]
+
+
+[dependencies]
+anyhow = "1.0.95"
+clap = { version = "4.5.27", features = ["derive"] }
+clap_derive = "4.5.24"
+regex = "1.11.1"
+syn = { version = "2.0.96", features = ["full", "parsing"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter", "registry"] }

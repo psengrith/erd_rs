@@ -1,0 +1,23 @@
+---
+title: ER Diagram
+---
+classDiagram
+ GeneModel "n..n" -- "" OrganismModel : exist_in
+ class GeneModel {
+  -u32 id
+  +String name
+  +String nucleotide_5_end
+  +OrganismModel organism
+ }
+ GeneModel: +new(id, name, nucleotide_5_end, organism) GeneModel
+ GeneModel: +set_id(id) 
+ GeneModel: -summarized() String
+ GeneModel: ~summarized2() String
+ GeneModel: +default() GeneModel
+ class OrganismModel {
+  -u32 id
+  +String nomenclature
+ }
+ OrganismModel: +default() OrganismModel
+ OrganismModel: +new(id, nomenclature) OrganismModel
+ OrganismModel: -log_to_console() 
