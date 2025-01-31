@@ -1,9 +1,18 @@
 # Entity Relation Diagram (ERD) from Rust Struct
 
-`erd_rs` is command-line utility for creating Entity Relation (ER) Diagram 
-(or class/struct diagram) from codes written in Rust.
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<center>
+      <div><img src="./logo.jpeg" width="169px;" alt="erd_rs"/></div>
+</center>
+<br/>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
 
-Properly documenting entity (or class) is a best practice in software development process. It enchance software maintainability, and allow developers to communicate effectively with team members and other stackholders. However, most developers prefer to express thier solution and idea through codes, instead of drawing. This command line takes Rust code as the source of truth to produce a entity relation diagram markdown file. This would saving thier time and energy for more coding.
+
+`erd_rs` is command-line utility for creating Entity Relation (ER) Diagram (or class/struct diagram) from codes written in Rust.
+
+Properly documenting entity (or class) is a best practice in software development process. It enhance software maintainability, and allow developers to communicate effectively with team members and other stakeholders. However, most developers prefer to express their solution and idea through codes, instead of drawing. This command line takes Rust code as the source of truth to produce a entity relation diagram markdown file. This would saving their time and energy for more coding.
 
 ## Get Started 👍
 
@@ -54,8 +63,6 @@ classDiagram
 ```
 
 ## Contributors ✨
-
-**This project is in great needs of contributors.**
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

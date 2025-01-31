@@ -137,7 +137,10 @@ fn parse_items(
             syn::Item::Struct(mut istruct) => {
                 istruct.attrs.retain_mut(|a| a.path().is_ident(&flag));
                 let clazz = istruct.ident.to_string();
-                if !istruct.attrs.is_empty() || clazz.ends_with(&args.suffix) {
+                if !istruct.attrs.is_empty()
+                    || clazz.ends_with(&args.suffix)
+                    || args.suffix.is_empty()
+                {
                     let mut m = clazz_map.get_mut(&clazz);
                     if m.is_none() {
                         clazz_map.insert(clazz.to_owned(), (Vis::default(), vec![]));
